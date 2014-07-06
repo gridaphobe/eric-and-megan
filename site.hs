@@ -15,7 +15,7 @@ main = hakyll $ do
         route   idRoute
         compile compressCssCompiler
 
-    match "index.html" $ do
+    match "*.html" $ do
         route idRoute
         compile $
             getResourceBody
